@@ -1,0 +1,11 @@
+{
+  "single_tree": {
+    "max_depth": null,
+    "min_samples_leaf": 4
+  },
+  "bagging": {
+    "n_trees": 25,
+    "max_depth": null,
+    "min_sample_leaf": 4
+  }
+}

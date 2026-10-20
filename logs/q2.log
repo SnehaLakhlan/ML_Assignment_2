@@ -1,0 +1,219 @@
+====================================================================================
+.                             Question 2 ( Part a )
+====================================================================================
+
+No. of Classes: [0 1 2]
+Number of samples: 10
+Initial sample weights: [0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1]
+True labels:[0 2 0 1 2 1 2 2 0 1]
+Weak learner predictions: [0 2 0 2 2 2 2 2 0 2]
+Weighted error: 0.3000
+Alpha: 1.5404
+Updated normalised weights: [0.0476 0.0476 0.0476 0.2222 0.0476 0.2222 0.0476 0.0476 0.0476 0.2222]
+Sum of updated weights: 1.0000
+
+====================================================================================
+                             Question 2 ( Part b )
+====================================================================================
+
+
+For No. of Rounds: 10 and Depth of weak learners: 1 
+
+Train Accuracy: 0.0500
+Val Accuracy: 0.0375
+Test Accuracy: 0.0375
+
+For No. of Rounds: 10 and Depth of weak learners: 2 
+
+Train Accuracy: 0.1083
+Val Accuracy: 0.0625
+Test Accuracy: 0.075
+
+For No. of Rounds: 10 and Depth of weak learners: 3 
+
+Train Accuracy: 0.1583
+Val Accuracy: 0.1
+Test Accuracy: 0.0875
+
+For No. of Rounds: 10 and Depth of weak learners: 4 
+
+Train Accuracy: 0.1917
+Val Accuracy: 0.1125
+Test Accuracy: 0.1
+
+For No. of Rounds: 25 and Depth of weak learners: 1 
+
+Train Accuracy: 0.0500
+Val Accuracy: 0.05
+Test Accuracy: 0.05
+
+For No. of Rounds: 25 and Depth of weak learners: 2 
+
+Train Accuracy: 0.1542
+Val Accuracy: 0.0625
+Test Accuracy: 0.1375
+
+For No. of Rounds: 25 and Depth of weak learners: 3 
+
+Train Accuracy: 0.3292
+Val Accuracy: 0.1375
+Test Accuracy: 0.1875
+
+For No. of Rounds: 25 and Depth of weak learners: 4 
+
+Train Accuracy: 0.7917
+Val Accuracy: 0.3375
+Test Accuracy: 0.325
+
+For No. of Rounds: 50 and Depth of weak learners: 1 
+
+Train Accuracy: 0.1417
+Val Accuracy: 0.1
+Test Accuracy: 0.15
+
+For No. of Rounds: 50 and Depth of weak learners: 2 
+
+Train Accuracy: 0.3500
+Val Accuracy: 0.1375
+Test Accuracy: 0.25
+
+For No. of Rounds: 50 and Depth of weak learners: 3 
+
+Train Accuracy: 0.4833
+Val Accuracy: 0.175
+Test Accuracy: 0.2125
+
+For No. of Rounds: 50 and Depth of weak learners: 4 
+
+Train Accuracy: 0.9458
+Val Accuracy: 0.2375
+Test Accuracy: 0.275
+
+For No. of Rounds: 100 and Depth of weak learners: 1 
+
+Train Accuracy: 0.2167
+Val Accuracy: 0.1875
+Test Accuracy: 0.175
+
+For No. of Rounds: 100 and Depth of weak learners: 2 
+
+Train Accuracy: 0.4083
+Val Accuracy: 0.1875
+Test Accuracy: 0.2125
+
+For No. of Rounds: 100 and Depth of weak learners: 3 
+
+Train Accuracy: 0.7500
+Val Accuracy: 0.325
+Test Accuracy: 0.375
+
+For No. of Rounds: 100 and Depth of weak learners: 4 
+
+Train Accuracy: 1.0000
+Val Accuracy: 0.3625
+Test Accuracy: 0.4375
+
+====================Val Accuracy and Params (part b)===================
+
+Best Validation Accuracy: 0.3625
+No. of rounds: 100, Depth: 4
+[0.85   0.8566 0.8344 0.7972 0.7075 0.5209 0.3766 0.7535 0.7266 0.697
+ 0.6712 0.6611 0.6317 0.6948 0.721  0.7155 0.7249 0.7419 0.7016 0.7151
+ 0.6763 0.644  0.7105 0.682  0.7169 0.73   0.7204 0.691  0.692  0.6582
+ 0.6833 0.676  0.6885 0.6613 0.6397 0.6618 0.6682 0.628  0.6269 0.5986
+ 0.5897 0.6624 0.6423 0.6614 0.6635 0.6706 0.6726 0.6952 0.6415 0.6504
+ 0.6674 0.6816 0.6808 0.6408 0.6867 0.559  0.6818 0.6792 0.65   0.6398
+ 0.6847 0.6327 0.661  0.6934 0.6632 0.6594 0.6391 0.6811 0.6744 0.6555
+ 0.653  0.706  0.6729 0.6353 0.6799 0.6741 0.6536 0.6761 0.6463 0.6776
+ 0.666  0.6844 0.6471 0.6562 0.6154 0.5445 0.6255 0.6341 0.6555 0.6712
+ 0.6399 0.638  0.6481 0.6926 0.6539 0.6615 0.6977 0.6858 0.6266 0.5962]
+
+====================================================================================
+                             Question 2 ( Part c )
+====================================================================================
+
+
+============================ Results with Different Number of learners ============================
+
+Number of Learners: 25
+
+Bagging Train Accuracy: 1.0000
+Bagging Validation Accuracy: 0.8375
+Bagging Test Accuracy: 0.7750
+Bagging Training Time: 13.58s
+
+Boosting Train Accuracy: 0.7917
+Boosting Validation Accuracy: 0.3375
+Boosting Test Accuracy: 0.3250
+Boosting Training Time: 4.38s
+
+Number of Learners: 50
+
+Bagging Train Accuracy: 1.0000
+Bagging Validation Accuracy: 0.8125
+Bagging Test Accuracy: 0.8250
+Bagging Training Time: 27.60s
+
+Boosting Train Accuracy: 0.9458
+Boosting Validation Accuracy: 0.2375
+Boosting Test Accuracy: 0.2750
+Boosting Training Time: 8.81s
+
+Number of Learners: 100
+
+Bagging Train Accuracy: 1.0000
+Bagging Validation Accuracy: 0.8250
+Bagging Test Accuracy: 0.8375
+Bagging Training Time: 55.74s
+
+Boosting Train Accuracy: 1.0000
+Boosting Validation Accuracy: 0.3625
+Boosting Test Accuracy: 0.4375
+Boosting Training Time: 17.66s
+
+Hard face index: 54
+True label: 9
+Prediction history: [0, 1, 2, 3, 4, 9, 25, 1, 2, 3, 4, 22, 12, 9, 4, 15, 9, 39, 3, 25, 22, 30, 14, 15, 9, 39, 1, 3, 25, 33, 14, 24, 15, 2, 12, 3, 11, 39, 34, 9, 19, 2, 3, 35, 22, 14, 9, 15, 39, 2, 3, 22, 34, 9, 24, 25, 9, 36, 16, 22, 39, 12, 20, 31, 2, 9, 5, 22, 39, 12, 20, 15, 2, 9, 5, 22, 39, 12, 8, 20, 26, 3, 5, 22, 39, 12, 9, 2, 3, 22, 33, 26, 14, 9, 7, 3, 12, 22, 39, 34]
+Weight history: [0.0048 0.0054 0.0064 0.0078 0.0107 0.0006 0.0014 0.0019 0.0025 0.0035
+ 0.0051 0.0075 0.0116 0.001  0.0013 0.0018 0.0002 0.0002 0.0003 0.0004
+ 0.0006 0.0009 0.0012 0.0017 0.0002 0.0002 0.0003 0.0004 0.0005 0.0008
+ 0.0011 0.0016 0.0023 0.0034 0.0052 0.0077 0.0112 0.0175 0.0272 0.0017
+ 0.0028 0.0041 0.0062 0.0092 0.0135 0.0197 0.0015 0.0021 0.0032 0.0048
+ 0.007  0.01   0.0144 0.001  0.0014 0.0025 0.0002 0.0003 0.0004 0.0006
+ 0.0009 0.0014 0.0021 0.0029 0.0043 0.0003 0.0005 0.0007 0.001  0.0015
+ 0.0022 0.003  0.0044 0.0003 0.0004 0.0006 0.0009 0.0013 0.002  0.0029
+ 0.0043 0.0061 0.0092 0.0136 0.0216 0.0387 0.0026 0.004  0.0059 0.0086
+ 0.0131 0.02   0.0301 0.0024 0.0036 0.0054 0.0075 0.0107 0.0166 0.0272]
+Times misclassified: 88 / 100
+
+====================================================================================
+                             Question 2 ( Part d )
+====================================================================================
+
+
+Predictions on Clean Testset
+
+Single Tree Accuracy: 0.6125
+Single Tree Mean Winning Prob: 0.9566964285714287
+
+Bagging Model Accuracy: 0.775
+Bagging Model Mean Winning Prob: 0.344
+
+Boosting Model Accuracy: 0.4375
+Boosting Model Mean Winning Prob: 0.11155978774286428
+
+
+ Predictions on Masked Testset
+
+Single Tree Accuracy: 0.6125
+Single Tree Mean Winning Prob: 0.9566964285714287
+
+Bagging Model Accuracy: 0.625
+Bagging Model Mean Winning Prob: 0.258
+
+Boosting Model Accuracy: 0.3625
+Boosting Model Mean Winning Prob: 0.1129850607126183
+
+Face index: 9, true label: 4
+Clean Images : Bagging: 2 ||  Boosting: 2
+Masked Images: Bagging: 2 ||  Boosting: 22

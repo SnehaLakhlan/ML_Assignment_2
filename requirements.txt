@@ -1,0 +1,4 @@
+# Python 3.9.6
+numpy==2.0.2
+scikit-learn==1.6.1
+matplotlib==3.9.4

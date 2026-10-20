@@ -1,0 +1,11 @@
+{
+  "bagging": {
+    "n_trees": 25,
+    "max_depth": null,
+    "min_sample_leaf": 4
+  },
+  "boosting": {
+    "n_stumps": 100,
+    "depth": 4
+  }
+}

@@ -1,0 +1,159 @@
+====================================================================================
+#                              Question 1 ( Part a )
+====================================================================================
+
+Max Depth: 2, Min Samples Leaf: 1, Validation Accuracy: 0.0500
+Max Depth: 2, Min Samples Leaf: 2, Validation Accuracy: 0.0500
+Max Depth: 2, Min Samples Leaf: 4, Validation Accuracy: 0.0500
+Max Depth: 4, Min Samples Leaf: 1, Validation Accuracy: 0.1000
+Max Depth: 4, Min Samples Leaf: 2, Validation Accuracy: 0.1000
+Max Depth: 4, Min Samples Leaf: 4, Validation Accuracy: 0.1000
+Max Depth: 8, Min Samples Leaf: 1, Validation Accuracy: 0.2000
+Max Depth: 8, Min Samples Leaf: 2, Validation Accuracy: 0.2000
+Max Depth: 8, Min Samples Leaf: 4, Validation Accuracy: 0.2000
+Max Depth: 16, Min Samples Leaf: 1, Validation Accuracy: 0.2875
+Max Depth: 16, Min Samples Leaf: 2, Validation Accuracy: 0.2875
+Max Depth: 16, Min Samples Leaf: 4, Validation Accuracy: 0.3000
+Max Depth: None, Min Samples Leaf: 1, Validation Accuracy: 0.5500
+Max Depth: None, Min Samples Leaf: 2, Validation Accuracy: 0.5375
+Max Depth: None, Min Samples Leaf: 4, Validation Accuracy: 0.6125
+
+
+==================== Best Baseline Decision Tree Params =====================
+
+Best Validation Accuracy: 0.6125
+Best Parameters: Max Depth: None, Min Samples Leaf: 4
+
+
+==================== Best Baseline Decision Tree Performance =====================
+
+Training Accuracy: 0.9542
+Validation Accuracy: 0.6125
+Test Accuracy: 0.6125
+Number of Leaves: 41
+Average Samples per Leaf: 5.9
+Fraction of Leaves containing One Sample: 0.000
+
+
+==================== Decision Tree Performance for Different Depths =====================
+
+Depth: 2
+Training Accuracy: 0.075 || Validation Accuracy: 0.05 || Test Accuracy: 0.05 
+Number of Leaves: 3 || Average Samples per Leaf: 80.0 || Fraction of Leaves with One Sample: 0.0
+
+Depth: 4
+Training Accuracy: 0.125 || Validation Accuracy: 0.1 || Test Accuracy: 0.087 
+Number of Leaves: 5 || Average Samples per Leaf: 48.0 || Fraction of Leaves with One Sample: 0.0
+
+Depth: 8
+Training Accuracy: 0.25 || Validation Accuracy: 0.2 || Test Accuracy: 0.188 
+Number of Leaves: 10 || Average Samples per Leaf: 24.0 || Fraction of Leaves with One Sample: 0.0
+
+Depth: 16
+Training Accuracy: 0.475 || Validation Accuracy: 0.3 || Test Accuracy: 0.35 
+Number of Leaves: 20 || Average Samples per Leaf: 12.0 || Fraction of Leaves with One Sample: 0.0
+
+Depth: None
+Training Accuracy: 0.954 || Validation Accuracy: 0.613 || Test Accuracy: 0.613 
+Number of Leaves: 41 || Average Samples per Leaf: 5.9 || Fraction of Leaves with One Sample: 0.0
+====================================================================================
+#                              Question 1 ( Part b )
+====================================================================================
+
+
+============================ Results for Bagged Trees with Different Number of Trees ============================
+
+Number of Trees: 1
+Train Accuracy: 0.7167
+Validation Accuracy: 0.4375
+Test Accuracy: 0.4125
+Number of distinct examples in bootstrap sample: 161.0000
+
+Number of Trees: 5
+Train Accuracy: 0.9125
+Validation Accuracy: 0.5500
+Test Accuracy: 0.5625
+Number of distinct examples in bootstrap sample: 155.8000
+
+Number of Trees: 10
+Train Accuracy: 0.9833
+Validation Accuracy: 0.7000
+Test Accuracy: 0.7250
+Number of distinct examples in bootstrap sample: 150.8000
+
+Number of Trees: 25
+Train Accuracy: 1.0000
+Validation Accuracy: 0.8375
+Test Accuracy: 0.7750
+Number of distinct examples in bootstrap sample: 150.8000
+
+Number of Trees: 50
+Train Accuracy: 1.0000
+Validation Accuracy: 0.8125
+Test Accuracy: 0.8250
+Number of distinct examples in bootstrap sample: 151.2200
+
+Number of Trees: 100
+Train Accuracy: 1.0000
+Validation Accuracy: 0.8250
+Test Accuracy: 0.8375
+Number of distinct examples in bootstrap sample: 151.4800
+
+Number of Trees: 200
+Train Accuracy: 1.0000
+Validation Accuracy: 0.8250
+Test Accuracy: 0.8375
+Number of distinct examples in bootstrap sample: 151.4500
+
+==================== Comparison Between theoretical and observed (B = 200) ============================
+
+Theoretical number of distinct examples in bootstrap sample: 151.8932
+Average number of distinct examples in bootstrap sample for 200 trees: 151.4500
+Difference between theoretical and observed: 0.4432
+====================================================================================
+#                              Question 1 ( Part c )
+====================================================================================
+
+B = 1 | OOB = 0.4051 | disagreement = 0.0000 | margin = 1.0000 | val = 0.4375
+B = 5 | OOB = 0.2574 | disagreement = 0.8125 | margin = 0.2250 | val = 0.5500
+B = 10 | OOB = 0.3797 | disagreement = 0.7922 | margin = 0.2500 | val = 0.7000
+B = 25 | OOB = 0.5250 | disagreement = 0.8137 | margin = 0.2370 | val = 0.8375
+B = 50 | OOB = 0.6875 | disagreement = 0.8073 | margin = 0.2528 | val = 0.8125
+B = 100 | OOB = 0.7083 | disagreement = 0.8061 | margin = 0.2566 | val = 0.8250
+B = 200 | OOB = 0.7208 | disagreement = 0.8044 | margin = 0.2628 | val = 0.8250
+
+======================Best Ensemble Size and Validation Accuracy=====================================
+
+Best Validation Accuracy (part c): 0.8375
+
+Best Ensemble Size (part c): 25
+====================================================================================
+#                              Question 1 ( Part d )
+====================================================================================
+
+
+====================Predictions on Clean Testset===========================
+
+Single Tree Accuracy: 0.6125
+Single Tree Mean Winning Prob: 0.9566964285714287
+
+Bagging Model Accuracy: 0.775
+Bagging Model Mean Winning Prob: 0.344
+
+
+=======================Predictions on Masked Testset=================================
+
+Single Tree Accuracy: 0.6125
+Single Tree Mean Winning Prob: 0.9566964285714287
+
+Bagging Model Accuracy: 0.625
+Bagging Model Mean Winning Prob: 0.258
+
+
+Where Bagging corrects the tree:
+  idx 1: true=0, tree=35, bagging=0, votes={0: 9, 1: 1, 4: 3, 11: 1, 12: 3, 16: 5, 23: 1, 37: 1, 39: 1}
+  idx 2: true=1, tree=6, bagging=1, votes={0: 1, 1: 9, 5: 1, 6: 3, 11: 1, 14: 2, 16: 2, 20: 2, 30: 2, 31: 1, 33: 1}
+
+Where both are wrong:
+  idx 7: true=3, tree=39, bagging=0, votes={0: 5, 3: 1, 6: 2, 8: 1, 12: 4, 14: 1, 16: 1, 17: 2, 19: 1, 20: 3, 34: 2, 39: 2}
+  idx 9: true=4, tree=12, bagging=2, votes={0: 1, 2: 10, 3: 3, 10: 1, 11: 1, 12: 4, 14: 1, 22: 1, 24: 1, 29: 1, 39: 1}

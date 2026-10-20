@@ -1,0 +1,73 @@
+Selected single tree: max_depth=None, min_samples_leaf=4
+Final bagged model: 25 trees with the same tree setting
+Selected boosting: 100 rounds, depth 4
+Resampled training sets: (30, 240) (saved to configs/q3_resampled_indexes.npy)
+
+====================================================================================
+#                              Question 3 ( Part a )
+====================================================================================
+
+Single tree refits done (21.8s)
+Bagging refits done (386.0s)
+Boosting refits done (458.6s)
+
+Single Tree -> Bias^2: 0.4236 || Variance: 0.6396 || Mean Acc: 0.4683 || Std Acc: 0.0330
+Bagging -> Bias^2: 0.5403 || Variance: 0.0497 || Mean Acc: 0.6850 || Std Acc: 0.0450
+Boosting -> Bias^2: 0.8855 || Variance: 0.0182 || Mean Acc: 0.3167 || Std Acc: 0.0831
+
+====================================================================================
+#                              Question 3 ( Part b )
+====================================================================================
+
+Shallow (max_depth=8, min_samples_leaf=4) done (693.3s)
+Selected (max_depth=None, min_samples_leaf=4) done (1549.0s)
+Much deeper (max_depth=None, min_samples_leaf=1) done (1623.7s)
+
+Setting: Shallow (max_depth=8, min_samples_leaf=4)
+Single Tree Bias^2: 0.8107 || Single Tree Variance: 0.1113
+Bagging Bias^2: 0.8168 || Bagging Variance: 0.0172
+Variance removed by bagging: 0.0941 (84.6%)
+Depth reached: 8 || Number of Leaves: 10 || Average Samples per Leaf: 24.0 || Fraction of Leaves with One Sample: 0.000
+Single Tree Acc: 0.1438 || Bagging Acc: 0.4292 || Improvement: 0.2854 || Disagreement: 0.9273
+
+Setting: Selected (max_depth=None, min_samples_leaf=4)
+Single Tree Bias^2: 0.4236 || Single Tree Variance: 0.6396
+Bagging Bias^2: 0.5352 || Bagging Variance: 0.0250
+Variance removed by bagging: 0.6145 (96.1%)
+Depth reached: 30 || Number of Leaves: 41 || Average Samples per Leaf: 5.9 || Fraction of Leaves with One Sample: 0.000
+Single Tree Acc: 0.4683 || Bagging Acc: 0.7383 || Improvement: 0.2700 || Disagreement: 0.8360
+
+Setting: Much deeper (max_depth=None, min_samples_leaf=1)
+Single Tree Bias^2: 0.4238 || Single Tree Variance: 0.6395
+Bagging Bias^2: 0.5131 || Bagging Variance: 0.0250
+Variance removed by bagging: 0.6146 (96.1%)
+Depth reached: 32 || Number of Leaves: 47 || Average Samples per Leaf: 5.1 || Fraction of Leaves with One Sample: 0.085
+Single Tree Acc: 0.4683 || Bagging Acc: 0.7658 || Improvement: 0.2975 || Disagreement: 0.8244
+
+====================================================================================
+#                              Question 3 ( Part c )
+====================================================================================
+
+Deepest tree: Much deeper (max_depth=None, min_samples_leaf=1, depth reached=32)
+Tree Bias^2: 0.4238 || Tree Variance: 0.6395 || Variance removed by bagging: 0.6146 (96.1%)
+Average Samples per Leaf: 5.1 || Fraction of Leaves with One Sample: 0.085 || Disagreement: 0.8244
+Tree Acc: 0.4683 || Bagging Acc: 0.7658 || Improvement: 0.2975
+
+Largest bagging improvement: Much deeper (max_depth=None, min_samples_leaf=1, depth reached=32)
+Tree Bias^2: 0.4238 || Tree Variance: 0.6395 || Variance removed by bagging: 0.6146 (96.1%)
+Average Samples per Leaf: 5.1 || Fraction of Leaves with One Sample: 0.085 || Disagreement: 0.8244
+Tree Acc: 0.4683 || Bagging Acc: 0.7658 || Improvement: 0.2975
+
+Deepest tree is the depth with the largest bagging improvement: True
+
+====================================================================================
+#                              Question 3 ( Part d )
+====================================================================================
+
+Single Tree -> Clean Acc: 0.6125 || Masked Acc: 0.6125 || Drop: 0.0000 || Bias^2: 0.4236 || Variance: 0.6396 || Std Acc (30 refits): 0.0330
+Bagging -> Clean Acc: 0.7750 || Masked Acc: 0.6250 || Drop: 0.1500 || Bias^2: 0.5403 || Variance: 0.0497 || Std Acc (30 refits): 0.0450
+Boosting -> Clean Acc: 0.4375 || Masked Acc: 0.3625 || Drop: 0.0750 || Bias^2: 0.8855 || Variance: 0.0182 || Std Acc (30 refits): 0.0831
+
+Lowest variance: Boosting
+Best clean accuracy: Bagging
+Largest masked drop: Bagging
